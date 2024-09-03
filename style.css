@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  background-color: #f3e29c;
+}
+
+.idioma {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  justify-content: end;
+  background-color: #000000;
+  width: 219px;
+  height: 50px;
+  margin-left: 1044px;
+  margin-top: 170px;
+  border-bottom-left-radius: 15px;
+}
+.idioma p{
+  color: aliceblue;
+  margin-right: 30px;
+  margin-top: 14px;
+  font-size: 16px;
+  text-align: justify;
+}
+.trocar-idioma {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  width: 110px;
+  height: 50px;
+  margin-left: 1120px;
+  margin-top: 220px;
+  border-radius: 15px;
+}
+
+.trocar-idioma button{
+  color: rgb(55, 55, 55);
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.trocar-idioma button a{
+  margin: 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.trocar-idioma button a:hover{
+  background: #740c0c;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
+}
+a:hover{
+  transition: 0.3s;
+}
+
+.trocar-idioma button:hover{
+  background: #740c0c;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
+}
+button:hover{
+  transition: 0.3s;
+}
+hr {
+  display: block;
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-color: #000000;
+}
+
+header {
+  background-image: url(./fundovintage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+header h1 {
+  margin-top: 30px;
+  margin-left: 120px;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 2px rgb(37, 83, 103);
+  padding-top: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 1rem;
+  font-size: 50px;
+}
+
+#menu ul {
+
+  list-style: none;
+}
+
+#menu li {
+  position: relative;
+}
+
+#menu li a {
+  color: rgb(55, 55, 55);
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  margin-left: 10px;
+  border-radius: 3rem;
+}
+
+#menu li a:hover {
+  background: #740c0c;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
+  border-radius: 0rem;
+}
+a:hover {
+  transition: 0.9s;
+}
+
+#menu li ul {
+  position: absolute;
+  top: 25px; /*Espaçamento do topo*/
+  left: 0; /*Espaçamento da esquerda*/
+  background-color: #fff;
+  display: none;
+}
+
+#menu li:hover ul,
+#menu li.over ul {
+  display: block;
+}
+
+header,
+#menu,
+#menu ul {
+  display: flex;
+}
+
+#menu {
+  flex: 1; /* isto é para a nav ocupar a largura toda menos a logo */
+  justify-content: center; /* alinha horizontalmente */
+  align-items: center; /* alinha verticalmente */
+}
+
+.decoracao {
+  display: flex; /* Define a div como flex container */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+.decoracao img {
+  margin-top: 40px;
+  max-width: 100%;
+  width: 200px;
+  height: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+}
+.carros {
+  text-align: center;
+  background-color: #740c0c;
+  width: 500px;
+  height: 300px;
+  border-radius: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 100px;
+  color: aliceblue;
+  transition: background-color 0.5s, transform 0.5s;
+}
+.carros:hover {
+  width: 500px;
+  height: 300px;
+  background-color: #8d1414;
+  transform: scale(1.1);
+}
+.grid img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 2rem;
+  width: 500px;
+  height: 300px;
+}
+.comprar {
+  padding: 10px;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  background-color: #c0a94f;
+}
+.comprar:hover {
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  background-color: #be9f25;
+}
+.comprar a {
+  text-decoration: none;
+  color: #740c0c;
+}
+
+.sobre {
+  text-align: center;
+  background-color: #740c0c;
+  width: 600px;
+  height: 400px;
+  border-radius: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 100px;
+  color: aliceblue;
+  transition: background-color 0.5s, transform 0.5s;
+}
+.sobre:hover {
+  width: 600px;
+  height: 400px;
+  background-color: #8d1414;
+  transform: scale(1.1);
+}
+.sobre h1 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.sobre p {
+  margin: 40px;
+  text-align: justify;
+}
+
+.contato {
+  text-align: center;
+  background-color: #740c0c;
+  width: 600px;
+  height: 400px;
+  border-radius: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 100px;
+  color: aliceblue;
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.contato:hover {
+  width: 600px;
+  height: 400px;
+  background-color: #8d1414;
+  transform: scale(1.1);
+}
+
+.contato h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.contato p {
+  margin: 40px;
+  text-align: justify;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-image: url(./fundovintage2.jpg);
+  background-repeat: round;
+}
+
+footer hr {
+  margin-top: 400px;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px; /*Largura da borda*/
+  border-color: darkslategray; /*Cor da borda*/
+}
+
+footer img {
+  width: 200px;
+  height: 200px;
+  margin-left: 1000px;
+}
+
+footer h1 {
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 2px rgb(75, 85, 84);
+  margin-left: 900px;
+  padding-bottom: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 1rem;
+  font-size: 50px;
+}
